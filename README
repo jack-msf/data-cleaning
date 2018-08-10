@@ -7,6 +7,6 @@ The information includes many different recorded variables that record observati
   which measure any form of "mean" or "std". The resulting organized data is called 'grouped_data', and the goal is to ensure it meet
   the qualifications of 'tidy data'.
   
-Included in this repo is the Corebook explaining all terms and data, and the script called run_analysis.r 
+Included in this repo is the Codebook explaining all terms and data, the script called run_analysis.r, and the exported grouped_data called "tidy_dancer" 
 
-The original information was 
+Original datasets provided by course
