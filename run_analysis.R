@@ -47,3 +47,6 @@ slim$activity <- sapply(slim$activity, function(x) x <- activities[x,2])
 
 #groups by subject and activity, averages each obvservation
 grouped_data <- slim %>% group_by(activity,subject) %>% summarize_all(funs(mean))
+
+#writes out grouped_data to an external file
+write.table(grouped_data,file = "tidy_dancer.txt", sep = " ")

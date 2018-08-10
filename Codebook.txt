@@ -29,3 +29,23 @@ train_subject - subject datat for train variables (from original dataset)
 train_x - all observations for train data (from original dataset)
 train_y - activity data for train variables (from original dataset)
 
+Steps:
+Downloads the features.txt file in order to label the variables.
+Pulls the activity, subject, and observation files for the test dataset and renames them test_y, test_subject, and text_x accordingly.
+	While pulling the observations (test_x), names all variables according to the features.txt file.
+Combines them all together using cbind, names the variables or test_y (activity) and test_subject (subject)
+
+Does the same for the train dataset.
+
+Then combines them all into one dataset using rbind.
+
+Loads the dplyr package, uses select and contains functionality to create two files "mean" and "std" which select only the variable names which include mean or std accordingly.
+
+Then creates a new file called "slim", which combines the selected data with the subject and activity information.
+
+Loads the activities.txt file, then matches and replaces activity numbers in slim with activity labels using an sapply
+
+Uses dplyr again to create a new file (grouped_data) which groups the labled slim file by activity and then subject, and uses the summarize_all function to average all observations of each variable.
+
+Writes grouped_data to a .txt file called "tidy_dancer"
+
