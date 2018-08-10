@@ -1,0 +1,12 @@
+run_analysis takes an existing group of data, and reorganizes according to instructions in the Getting and Cleaning Data course. 
+
+The information includes many different recorded variables that record observations of subjects performing a set of activities while
+  carrying a mobile device. The point of the exercise is to take information which has been broken out, and recompile and filter according
+  to the following: Organize all the variables (for both the test and training datasets) according to the type of activity performed 
+  (running, walking, standing, etc.), and the subject performing the activity. Then take an average of only the observations of variables
+  which measure any form of "mean" or "std". The resulting organized data is called 'grouped_data', and the goal is to ensure it meet
+  the qualifications of 'tidy data'.
+  
+Included in this repo is the Corebook explaining all terms and data, and the script called run_analysis.r 
+
+The original information was 
