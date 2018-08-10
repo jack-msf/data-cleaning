@@ -1,0 +1,31 @@
+Packages used: dplyr
+
+Data
+
+activities - list of activity descriptions corresponding to codes in the original data (from original dataset)
+features - list of variable descriptions corresponding to columns in the original data (from original dataset)
+
+grouped_data - average of all mean and std variables grouped by activity and then subject
+	This uses the dplyr package to group the data into activity, then subject, and then take the average
+	for all obvservations of each variable.
+
+mean - only mean variables from train and test original data.
+	This selects only variables from the combined data that have the word "mean" in the variable name.
+	
+merged - combined test and train data including activities and subjects. Includes ALL variables. 
+	
+slim - test and train subjects, activities, and only mean and std variables. 
+	
+std - only std variables from train and test origina data. 
+	This selects only variables from the combined data that have the word "std" in teh variable name.
+
+test - activity, subject, and all variables for test data.
+
+test_subject - subject data for test variables  (from original dataset)
+test_x - all obvservations for test data (from original dataset)
+text_y - activity data for test variables (from original dataset)
+train - activity, subject, and all variables for train data
+train_subject - subject datat for train variables (from original dataset)
+train_x - all observations for train data (from original dataset)
+train_y - activity data for train variables (from original dataset)
+
